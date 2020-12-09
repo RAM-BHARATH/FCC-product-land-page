@@ -2,7 +2,34 @@ html{
     font-family: 'Courier New', Courier, monospace;
     font-size: 18px;
 }
+body{
+    background-color: aquamarine;
+}
 h1{
     font-size: 2em;
     font-weight: 900;
+}
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: burlywood;
+    
+}
+.header-img{
+    margin:2%;
+    width: 50%;
+    background-color: azure;
+    padding: 30px;
+}
+.nav-bar{
+    display: flex;
+    padding: 10px;
+    margin: 2%;
+    background-color: blue;
+}
+.nav-bar li{
+    padding: 10px;
+    margin:5%;
+    background-color: blueviolet;
 }
