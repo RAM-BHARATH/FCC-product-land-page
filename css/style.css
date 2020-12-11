@@ -9,10 +9,13 @@ h1{
     font-size: 2em;
     font-weight: 900;
 }
+input{
+    font-size: 0.8em;
+}
 header{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
     background-color: burlywood;
     
 }
@@ -24,6 +27,7 @@ header{
 }
 .nav-bar{
     display: flex;
+    justify-content: end;
     padding: 10px;
     margin: 2%;
     background-color: blue;
@@ -32,4 +36,53 @@ header{
     padding: 10px;
     margin:5%;
     background-color: blueviolet;
+}
+
+.get-email{
+    /* width: 100%; */
+    background-color: chartreuse;
+    padding: 2% 20%;
+    display: grid;
+    margin:0 auto;
+    grid-template-rows: 50px 100px 30px ;
+    grid-template-columns: 1fr ;
+    grid-template-areas: "p"
+                        "mail"
+                        "submit";
+    grid-row-gap: 5px;
+}
+.get-email p{
+    grid-area: p;
+    background-color: chocolate;
+    margin: 0 auto;
+}
+form{
+    width: 50%;
+    background-color: yellow;
+    margin: 0 auto;
+}
+.input-container{
+    background-color: bisque;
+    width: 50%;
+    margin: 0 auto;
+    padding: 0 0 0 20px;
+}
+.input-container .button1{
+    width:100px;
+    margin:15px 0 15px 60px;
+}
+.get-email .mail1{
+    grid-area: mail;
+    background-color: coral;
+    margin: 10px 0 10px 0;
+    text-align: center
+}
+.get-email .button1{
+    grid-area: submit;
+    background-color:pink;
+    /* margin: 10px auto; */
+    text-align: center;
+}
+@media(max-width:400px){
+
 }
