@@ -1,13 +1,21 @@
 html{
     font-family: 'Courier New', Courier, monospace;
-    font-size: 18px;
+    font-size: 16px;
 }
 body{
     background-color: aquamarine;
 }
 h1{
-    font-size: 2em;
+    font-size: 3.5em;
     font-weight: 900;
+}
+h2{
+    font-size: 2.5em;
+    font-weight: 700;
+}
+h3{
+    font-size: 2em;
+    font-weight: 600;
 }
 input{
     font-size: 0.8em;
@@ -44,44 +52,97 @@ header{
     padding: 2% 20%;
     display: grid;
     margin:0 auto;
-    grid-template-rows: 50px 100px 30px ;
+    grid-template-rows: 10% 20%;
     grid-template-columns: 1fr ;
     grid-template-areas: "p"
-                        "mail"
-                        "submit";
+                        "mail";
     grid-row-gap: 5px;
 }
 .get-email p{
     grid-area: p;
     background-color: chocolate;
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    justify-self: center;
 }
 form{
     width: 50%;
     background-color: yellow;
     margin: 0 auto;
+    /* justify-self: center; */
 }
 .input-container{
     background-color: bisque;
     width: 50%;
     margin: 0 auto;
-    padding: 0 0 0 20px;
+    /* justify-items: center; */
+    padding: 0 0 0 0;
 }
 .input-container .button1{
     width:100px;
-    margin:15px 0 15px 60px;
+    margin:1% 25% 2% 25%;
+    background-color:pink;
+    text-align: center;
 }
-.get-email .mail1{
+.input-container .mail1{
     grid-area: mail;
+    margin: 1% 12% 2% 12%;
     background-color: coral;
-    margin: 10px 0 10px 0;
+    /* margin: 10px 0 10px 10px; */
+    /* justify-self: center; */
     text-align: center
 }
-.get-email .button1{
+/* .get-email .button1{
     grid-area: submit;
-    background-color:pink;
-    /* margin: 10px auto; */
+    
+    margin: 10px auto;
+    
+} */
+
+.features{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    background-color: orangered;
+    /* justify-items: center; */
+    padding: 2%;
+}
+.feature{
+    margin: 2% 0 0 20%;
+    display: flex;
+}
+.feature img{
+    margin: 5px;
+}
+.video-box{
+    margin: 0.1% ;
+    display: flex;
+    justify-content: center;
+    background-color: orchid;
+}
+.product-box{
+    display: grid;
+    margin:1%;
+    grid-template-rows: 1fr;
+    grid-template-columns:1fr 1fr 1fr;
+    justify-items: center;
+}
+.product{
+    border: black solid 1px;
+}
+.product h3{
+    background-color: #D0D0D0;
+}
+.product .price{
+    font-weight: 800;
     text-align: center;
+}
+.product .specs p{
+    padding: 5px;
+    margin:10px;
+    text-align: center;
+}
+.select-button{
+    margin:0 20% 10% 20%;
 }
 @media(max-width:400px){
 
